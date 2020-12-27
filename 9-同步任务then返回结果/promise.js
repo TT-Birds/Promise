@@ -51,7 +51,12 @@ Promise.prototype.then = function (onResolved, onRejected) {
       let result = onResolved(this.PromiseResult);
       // 判断
       if (result instanceof Promise) {
-        // 
+        // 如果是 promise 类型的对象
+        result.then(v => {
+          resolve();
+        }, r => {
+
+        })
       } else {
         // 结果的对象状态为『成功』
         resolve(result);
