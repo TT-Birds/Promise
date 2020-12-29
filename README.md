@@ -1,2 +1,2 @@
 # Promise
-promise_learn ttbirds
+promise_learn ttbi
